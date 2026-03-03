@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-3  ">
+        <h1>Valyutalar kursi</h1>
+        <table class="table table-striped">
+            <thead>
+                <th>Valyuta</th>
+                <th>Miqdori</th>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>USD</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>0.91</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Valyuta hisoblash</h2>
+        <div class="row p-3" id="converter">
+            <div class="col-6 col-sm-3">
+                <label for="from-currency">Desired currency</label>
+                <select name="" id="from-currency" class="form-select"></select>
+            </div>
+
+             <div class="col-6 col-sm-3">
+                <label for="to-currency">Base currency</label>
+                <select name="" id="to-currency" class="form-select"></select>
+            </div>
+              <div class="col-6 col-sm-3">
+                <label for="amount">Amount</label>
+               <input type="number" id="amount" class="form-control">
+            </div>
+
+             <div class="col-6 col-sm-3 d-flex align-items-end">
+              <button id="convert" class="btn btn-success">Convert</button>
+               <h4 id="result" class="ms-2">Natija: </h4>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
